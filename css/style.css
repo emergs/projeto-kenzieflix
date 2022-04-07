@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('../fonts/IBM_Plex_Sans/IBMPlexSans-SemiBold.ttf');
+}
+/*GERAL*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+section{
+  width: 1280px;
+  height: 720px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items:center;
+  background-color: #121214;
+
+}
+/*ÁREA DO LOGO*/
+.logo{
+  width: 229px;
+  height: 68px;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+
+/*ÁREA DO TÍTULO*/
+.titulo{
+  width: 334px;
+  height: 42px;
+}
+.titulo h1{
+  font-family: IBMPlexSans;
+  font-size: 32px;
+  color:#fff;
+}
+
+/*ÁREA DOS AVATARES*/
+.elements{
+  width: 160px;
+  height: 200px;
+  list-style:none;
+}
+.elements-group{
+  width: 700px;
+  display:flex;
+  justify-content: space-between;
+}
+.icon-avatar, .icon-new-profile{
+  width: 100%;
+  height: 80%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.icon-avatar img, .icon-new-profile img{
+  width: 100%;
+  height: 100%;
+  transition:-webkit-transform 0.7s;
+  transition:-ms-transform 0.7s;
+  transition: transform 0.7s;
+}
+.icon-avatar:hover{
+  border:3px solid #fff;
+}
+.icon-avatar:hover img{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+   transform: scale(1.3);
+   border: 2px solid #fff;
+   cursor: pointer;
+}
+.icon-new-profile {
+  background-image: url('../img/avatar-perfil.png');
+  background-size: contain;
+}
+.icon-new-profile:hover{
+  background-image: url('../img/avatar-perfil2.png');
+  cursor: pointer;
+}
+.legend-avatar{
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.legend-avatar p{
+  font-family: 'IBMPlexSans';
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #fff;
+}
+
+/*BOTÃO GERENCIAR PERFIS*/
+.setting-user button{
+  width: 206px;
+  height: 50px;
+  font-family: IBMPlexSans;
+  font-size: 16px;
+  border: 1px #fff solid;
+  border-radius: 8px;
+  background-color: #121214;
+  color:#fff;
+  transition: 1s;
+}
+.setting-user:hover button{
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  transition: 1s;
+}
